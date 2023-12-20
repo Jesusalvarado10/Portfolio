@@ -12,7 +12,7 @@ body{
     .button-container{
 margin: 0;
         background-color: #16161e;
-        height: 50px;
+        height: 60px;
         width: 100vw;
         display: flex;
         align-items: center;
@@ -28,30 +28,30 @@ margin: 0;
     position: relative;
     right: 200px;
     color: rgb(212, 212, 212);
-    font-size:8px;         
+    font-size:12px;         
    }
    .button-container nav ul li a:hover{
     color: white;
-    text-shadow: 0 0 1rem #87F, 0 0 1rem #87F,
-		0 0 1rem #87F
+
     
       }   .button-container nav a {
         position: relative;
-          
-                padding: 0 30px 0 30px;
+        
                 text-decoration: none;
                 color: rgb(212, 212, 212);
-                font-size:8px;                
-                
+                font-size:10px;                
+            
 } 
 .button-container nav{
   position: relative;
  
   left: 200px;}
+ 
 
  .button-container nav ul li{
         display:  inline;
-
+        padding: 0 20px 0 20px;
+ 
       }
 .fondo{
   display: flex;
@@ -85,15 +85,186 @@ text-align: left;
         font-size: 10px;
       }
     
-      
+      .fondo2{
+        display: flex;
+     justify-content: center;
+     padding: 5em;
+   
+       }
+       .projects{
+  
+         display: flex;
+         flex-direction: column;
+         padding: 2rem;
+       }
+       .projects h1{
+  
+         font-size: 50px;
+  
+       }
+       .Datos div img{
+         
+         width: 20rem;
+       
+       }
+       .Datos {
+  
+         display: flex;
+         flex-direction: column;
+         flex-basis: 260px;
+         align-items: center;
+         text-align: center;
+         font-size: 15px;
+         
+       }
+     
+       .Datos div{
+      padding-bottom: 2rem;
+
+
+
+       }
+       .Datos p{
+         color: rgb(203, 200, 200);
+         padding-bottom: 1rem;
+       }
+     
+       .card {
+         display: flex;
+         justify-content: space-evenly;
+         height: 70px;
+         width: 270px;
+       }
+       
+       .card svg {
+         position: absolute;
+         display: flex;
+         width: 60%;
+         height: 100%;
+         font-size: 24px;
+         font-weight: 700;
+         opacity: 1;
+         transition: opacity 0.25s;
+         z-index: 2;
+         cursor: pointer;
+       }
+       
+       .card .social-link1,.card .social-link2,.card .social-link3,.card .social-link4 {
+         position: relative;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         width: 25%;
+         color: whitesmoke;
+         font-size: 24px;
+         text-decoration: none;
+         transition: 0.25s;
+         border-radius: 50px;
+       }
+       
+       .card svg {
+         transform: scale(1);
+       }
+       
+       .card .social-link1:hover {
+         background-color: #aa5ea3;
+         animation: bounce_613 0.4s linear;
+       }
+       
+       .card .social-link2:hover {
+         background-color: #0a66c2;
+         animation: bounce_613 0.4s linear;
+       }
+       
+       .card .social-link3:hover {
+         background-color: #0059f7;
+         animation: bounce_613 0.4s linear;
+       }
+       
+       .card .social-link4:hover {
+         background-color: #304e90;
+         animation: bounce_613 0.4s linear;
+       }
+       
+       @keyframes bounce_613 {
+         40% {
+           transform: scale(1.4);
+         }
+       
+         60% {
+           transform: scale(0.8);
+         }
+       
+         80% {
+           transform: scale(1.2);
+         }
+       
+         100% {
+           transform: scale(1);
+         }
+       }
+       button {
+        outline: none;
+        cursor: pointer;
+        border: none;
+        padding: 0.8rem 1.2rem;
+        margin: 0;
+        position: relative;
+        display: inline-block;
+        letter-spacing: 0.05rem;
+        font-weight: 700;
+        font-size: 14px;
+        border-radius: 100px;
+        overflow: hidden;
+        background: #66ff66;
+        color: ghostwhite;
+       }
+       
+       button span {
+        position: relative;
+        z-index: 10;
+        transition: color 0.4s;
+       }
+       
+       button:hover span {
+        color: black;
+       }
+       
+       button::before,
+       button::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+       }
+       
+       button::before {
+        content: "";
+        background: #000;
+        width: 120%;
+        left: -10%;
+        transform: skew(30deg);
+        transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+       }
+       
+       button:hover::before {
+        transform: translate3d(100%, 0, 0);
+       }
+       .Text{
+        position: relative;
+        left: 20px;
+
+       }
     }
-    @media screen and (max-width:767px ) {
+    @media screen  and (min-width:720px ) and (max-width:1024px ) {
 
       
     .button-container{
       margin: 0;
               background-color: #16161e;
-              height: 50px;
+              height: 67px;
               width: 100vw;
               display: flex;
               align-items: center;
@@ -111,22 +282,19 @@ text-align: left;
          .name{
           padding: 0 30px 0 30px;
           position: relative;
-          right: 100px;
+          right: 50px;
           color: rgb(212, 212, 212);
-          font-size:8px;         
+          font-size:12px;         
          }
          .button-container nav ul li a:hover{
           color: white;
-          text-shadow: 0 0 1rem #87F, 0 0 1rem #87F,
-          0 0 1rem #87F
-          
             }   .button-container nav a {
               position: relative;
                 
-                      padding: 0 30px 0 30px;
+                    
                       text-decoration: none;
                       color: rgb(212, 212, 212);
-                      font-size:8px;                
+                      font-size:10px;                
                       
       } 
       .button-container nav{
@@ -136,6 +304,7 @@ text-align: left;
       
        .button-container nav ul li{
               display:  inline;
+              padding: 0 30px 0 30px;
       
             }
       .fondo{
@@ -144,132 +313,192 @@ text-align: left;
         
         
           }
-          #hello{
-            text-align: left;
-                    text-indent: 40px;
-                    margin-top: 100px;
-                    margin-left: 20px;
-                    font-size: 40px;
-                   
-                    
-                  }
-                  .Aboutme p {
+        
+                .Aboutme {
+                  margin-top: 50px;
                     display: flex;
-                    
-                    margin-left: 20px;
+                    flex-direction: column;
+                    flex-basis: 10px;
                     align-items: center;
                     text-align: center;
+         
                     font-size: 10px;
                   }
-                
+                  #hello{ 
+                    display: flex;
+                  
+                            font-size: 45px;
+                          
+                    
+                            
+                          }
+                  .fondo2{
+                    display: flex;
+                    flex-direction: column-reverse;
+                 justify-content: center;
+                 align-items: center;
+                 padding: 5em;
+               
+                   }
+                   .projects{
+              
+                     display: flex;
+                     flex-direction: column;
+                     
+                     padding: 5rem;
+                   }
+                   .projects h1{
+              
+                     font-size: 50px;
+              
+                   }
+               
+                   .Datos {
+              
+                     display: flex;
+                     width: 250px;
+                     flex-direction: column;
+           
+                     align-items: center;
+                     text-align: center;
+                     font-size: 14px;
+                    
+                   }
+                   .Text{
+                    position: relative;
+                    left: 20px;
+
+                   }
+                   .Datos p{
+                     color: rgb(203, 200, 200);
+                   }
+                 
+                   .card {
+                     display: flex;
+                     justify-content: space-evenly;
+                     height: 70px;
+                     width: 270px;
+                   }
+                   
+                   .card svg {
+                     position: absolute;
+                     display: flex;
+                     width: 60%;
+                     height: 100%;
+                     font-size: 24px;
+                     font-weight: 700;
+                     opacity: 1;
+                     transition: opacity 0.25s;
+                     z-index: 2;
+                     cursor: pointer;
+                   }
+                   
+                   .card .social-link1,.card .social-link2,.card .social-link3,.card .social-link4 {
+                     position: relative;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                     width: 25%;
+                     color: whitesmoke;
+                     font-size: 24px;
+                     text-decoration: none;
+                     transition: 0.25s;
+                     border-radius: 50px;
+                   }
+                   
+                   .card svg {
+                     transform: scale(1);
+                   }
+                   
+                   .card .social-link1:hover {
+                     background-color: #aa5ea3;
+                     animation: bounce_613 0.4s linear;
+                   }
+                   
+                   .card .social-link2:hover {
+                     background-color: #0a66c2;
+                     animation: bounce_613 0.4s linear;
+                   }
+                   
+                   .card .social-link3:hover {
+                     background-color: #0059f7;
+                     animation: bounce_613 0.4s linear;
+                   }
+                   
+                   .card .social-link4:hover {
+                     background-color: #304e90;
+                     animation: bounce_613 0.4s linear;
+                   }
+                   
+                   @keyframes bounce_613 {
+                     40% {
+                       transform: scale(1.4);
+                     }
+                   
+                     60% {
+                       transform: scale(0.8);
+                     }
+                   
+                     80% {
+                       transform: scale(1.2);
+                     }
+                   
+                     100% {
+                       transform: scale(1);
+                     }
+                   }
+                   button {
+                    outline: none;
+                    cursor: pointer;
+                    border: none;
+                    padding: 0.9rem 2rem;
+                    margin: 0;
+                    font-family: inherit;
+                    font-size: inherit;
+                    position: relative;
+                    display: inline-block;
+                    letter-spacing: 0.05rem;
+                    font-weight: 700;
+                    font-size: 12px;
+                    border-radius: 500px;
+                    overflow: hidden;
+                    background: #66ff66;
+                    color: ghostwhite;
+                   }
+                   
+                   button span {
+                    position: relative;
+                    z-index: 10;
+                    transition: color 0.4s;
+                   }
+                   
+                   button:hover span {
+                    color: rgb(0, 0, 0);
+                   }
+                   
+                   button::before,
+                   button::after {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 0;
+                   }
+                   
+                   button::before {
+                    content: "";
+                    background: #000;
+                    width: 120%;
+                    left: -10%;
+                    transform: skew(30deg);
+                    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+                   }
+                   
+                   button:hover::before {
+                    transform: translate3d(100%, 0, 0);
+                   }
+                   
+                       
     }
-    .fondo2{
-      display: flex;
-   justify-content: center;
-   padding: 5em;
- 
-     }
-     .projects{
-
-       display: flex;
-       flex-direction: column;
-       padding: 2rem;
-     }
-     .projects h1{
-
-       font-size: 50px;
-
-     }
-     .Datos div img{
-       
-       width: 20rem;
-     
-     }
-     .Datos {
-
-       display: flex;
-       flex-direction: column;
-       flex-basis: 260px;
-       align-items: center;
-       text-align: center;
-       font-size: 10px;
-     }
-     .Datos p{
-       color: rgb(203, 200, 200);
-     }
    
-     .card {
-       display: flex;
-       justify-content: space-evenly;
-       height: 70px;
-       width: 270px;
-     }
-     
-     .card svg {
-       position: absolute;
-       display: flex;
-       width: 60%;
-       height: 100%;
-       font-size: 24px;
-       font-weight: 700;
-       opacity: 1;
-       transition: opacity 0.25s;
-       z-index: 2;
-       cursor: pointer;
-     }
-     
-     .card .social-link1,.card .social-link2,.card .social-link3,.card .social-link4 {
-       position: relative;
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       width: 25%;
-       color: whitesmoke;
-       font-size: 24px;
-       text-decoration: none;
-       transition: 0.25s;
-       border-radius: 50px;
-     }
-     
-     .card svg {
-       transform: scale(1);
-     }
-     
-     .card .social-link1:hover {
-       background-color: #aa5ea3;
-       animation: bounce_613 0.4s linear;
-     }
-     
-     .card .social-link2:hover {
-       background-color: #0a66c2;
-       animation: bounce_613 0.4s linear;
-     }
-     
-     .card .social-link3:hover {
-       background-color: #0059f7;
-       animation: bounce_613 0.4s linear;
-     }
-     
-     .card .social-link4:hover {
-       background-color: #304e90;
-       animation: bounce_613 0.4s linear;
-     }
-     
-     @keyframes bounce_613 {
-       40% {
-         transform: scale(1.4);
-       }
-     
-       60% {
-         transform: scale(0.8);
-       }
-     
-       80% {
-         transform: scale(1.2);
-       }
-     
-       100% {
-         transform: scale(1);
-       }
-     }
-    
