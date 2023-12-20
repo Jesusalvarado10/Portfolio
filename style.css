@@ -562,11 +562,19 @@ text-align: left;
                 padding-top: 10rem;
                   display: flex;
                   flex-direction: column;
-                  flex-basis: 5px;
-                  align-items: center;
+  
+            
                   text-align: center;
        
                   font-size: 10px;
+                }
+                .Aboutme p{
+                  padding-top: 10px;
+                  
+                  font-size: 8.5px;
+        
+
+           
                 }
                 #hello{ 
                   display: flex;
@@ -616,6 +624,7 @@ text-align: left;
 
                  }
                  .Datos p{
+     
                    color: rgb(203, 200, 200);
                  }
                
