@@ -501,4 +501,249 @@ text-align: left;
                    
                        
     }
-   
+    @media screen  and (max-width:720px )
+{
+
+      
+  .button-container{
+    margin: 0;
+            background-color: #16161e;
+            height: 67px;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            
+    
+    
+       
+        }      .prueba{
+          color: #fff;
+                  justify-content: center;
+                  
+                }
+       .name{
+        padding: 0 5px 0 5px;
+        position: relative;
+        
+        color: rgb(212, 212, 212);
+        font-size:12px;         
+       }
+       .button-container nav ul li a:hover{
+        color: white;
+          }   .button-container nav a {
+            position: relative;
+              
+                  
+                    text-decoration: none;
+                    color: rgb(212, 212, 212);
+                    font-size:10px;                
+                    
+    } 
+    .button-container nav{
+      position: relative;
+     
+      left: 20px;}
+    
+     .button-container nav ul li{
+            display:  inline;
+            padding: 0 10px 0 5px;
+    
+          }
+    .fondo{
+      display: flex;
+      justify-content: center;
+      
+      
+        }
+      
+              .Aboutme {
+                padding-top: 10rem;
+                  display: flex;
+                  flex-direction: column;
+                  flex-basis: 5px;
+                  align-items: center;
+                  text-align: center;
+       
+                  font-size: 10px;
+                }
+                #hello{ 
+                  display: flex;
+                
+                          font-size: 45px;
+                        
+                  
+                          
+                        }
+                        
+      
+                .fondo2{
+                  display: flex;
+                  flex-direction: column-reverse;
+               justify-content: center;
+               align-items: center;
+               padding: 5em;
+             
+                 }
+                 .projects{
+            
+                   display: flex;
+                   flex-direction: column;
+                   
+                   padding: 5rem;
+                 }
+                 .projects h1{
+            
+                   font-size: 40px;
+            
+                 }
+             
+                 .Datos {
+            
+                   display: flex;
+                   width: 250px;
+                   flex-direction: column;
+         
+                   align-items: center;
+                   text-align: center;
+                   font-size: 10px;
+                  
+                 }
+                 .Text{
+                  position: relative;
+                  left: 50px;
+
+                 }
+                 .Datos p{
+                   color: rgb(203, 200, 200);
+                 }
+               
+                 .card {
+                   display: flex;
+                   justify-content: space-evenly;
+                   height: 70px;
+                   width: 270px;
+                 }
+                 
+                 .card svg {
+                   position: absolute;
+                   display: flex;
+                   width: 60%;
+                   height: 100%;
+                   font-size: 24px;
+                   font-weight: 700;
+                   opacity: 1;
+                   transition: opacity 0.25s;
+                   z-index: 2;
+                   cursor: pointer;
+                 }
+                 
+                 .card .social-link1,.card .social-link2,.card .social-link3,.card .social-link4 {
+                   position: relative;
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+                   width: 25%;
+                   color: whitesmoke;
+                   font-size: 24px;
+                   text-decoration: none;
+                   transition: 0.25s;
+                   border-radius: 50px;
+                 }
+                 
+                 .card svg {
+                   transform: scale(1);
+                 }
+                 
+                 .card .social-link1:hover {
+                   background-color: #aa5ea3;
+                   animation: bounce_613 0.4s linear;
+                 }
+                 
+                 .card .social-link2:hover {
+                   background-color: #0a66c2;
+                   animation: bounce_613 0.4s linear;
+                 }
+                 
+                 .card .social-link3:hover {
+                   background-color: #0059f7;
+                   animation: bounce_613 0.4s linear;
+                 }
+                 
+                 .card .social-link4:hover {
+                   background-color: #304e90;
+                   animation: bounce_613 0.4s linear;
+                 }
+                 
+                 @keyframes bounce_613 {
+                   40% {
+                     transform: scale(1.4);
+                   }
+                 
+                   60% {
+                     transform: scale(0.8);
+                   }
+                 
+                   80% {
+                     transform: scale(1.2);
+                   }
+                 
+                   100% {
+                     transform: scale(1);
+                   }
+                 }
+                 button {
+                  outline: none;
+                  cursor: pointer;
+                  border: none;
+                  padding: 0.5rem 1rem;
+                  margin: 0;
+                  font-family: inherit;
+                  font-size: inherit;
+                  position: relative;
+                  display: inline-block;
+                  letter-spacing: 0.05rem;
+                  font-weight: 700;
+                  font-size: 8px;
+                  border-radius: 500px;
+                  overflow: hidden;
+                  background: #66ff66;
+                  color: ghostwhite;
+                 }
+                 
+                 button span {
+                  position: relative;
+                  z-index: 10;
+                  transition: color 0.4s;
+                 }
+                 
+                 button:hover span {
+                  color: rgb(0, 0, 0);
+                 }
+                 
+                 button::before,
+                 button::after {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  z-index: 0;
+                 }
+                 
+                 button::before {
+                  content: "";
+                  background: #000;
+                  width: 120%;
+                  left: -10%;
+                  transform: skew(30deg);
+                  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+                 }
+                 
+                 button:hover::before {
+                  transform: translate3d(100%, 0, 0);
+                 }
+
+
+}   
